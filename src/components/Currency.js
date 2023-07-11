@@ -19,12 +19,12 @@ const Currency = () => {
     switch(currency){
       case '$' :
         return '$ Dollar'
-      case 'Â£' :
-        return 'Â£ Pound'
-      case 'â‚¬' :
-        return 'â‚¬ Euro'
-      case 'â‚¹' :
-        return 'â‚¹ Ruppee'
+      case '£' :
+        return '£ Pound'
+      case '€' :
+        return '€ Euro'
+      case '₹' :
+        return '₹ Ruppee'
       default:
         return ''
     }
@@ -57,27 +57,27 @@ const Currency = () => {
           <button
             className="dropdown-item"
             type="button"
-            onClick={() => setCurrencyHandler('Â£')}
+            onClick={() => setCurrencyHandler('£')}
           >
-           Â£ Pound
+           £ Pound
           </button>
         </li>
         <li>
           <button
             className="dropdown-item"
             type="button"
-            onClick={() => setCurrencyHandler('â‚¬')}
+            onClick={() => setCurrencyHandler('€')}
           >
-           â‚¬ Euro
+           £ Euro
           </button>
         </li>
         <li>
           <button
             className="dropdown-item"
             type="button"
-            onClick={() => setCurrencyHandler('â‚¹')}
+            onClick={() => setCurrencyHandler('₹')}
           >
-           â‚¹ Ruppee
+           ₹ Ruppee
           </button>
         </li>
       </ul>
